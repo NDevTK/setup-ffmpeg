@@ -1,10 +1,10 @@
 {
   "name": "setup-ffmpeg",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-beta",
   "private": true,
   "description": "Setup FFmpeg in GitHub Actions",
   "scripts": {
-    "build": "ncc build src/main.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,14 +21,14 @@
   },
   "homepage": "https://github.com/FedericoCarboni/setup-ffmpeg#readme",
   "devDependencies": {
-    "@types/node": "^12.19.0",
     "@vercel/ncc": "^0.25.1",
     "tslib": "^2.0.3",
     "typescript": "^4.0.5"
   },
   "dependencies": {
     "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4",
     "@actions/http-client": "^1.0.9",
-    "@actions/tool-cache": "^1.6.0"
+    "@actions/tool-cache": "^1.6.1"
   }
 }
